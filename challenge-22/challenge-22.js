@@ -4,24 +4,24 @@
   Crie dois objetos, que serão duas pessoas. Cada um deve ter as propriedades
   `name` e `lastName`, preenchidos com o nome e sobrenome da pessoa.
   */
-  var ernesto = {
+  let ernesto = {
     name: 'Ernesto',
     lastName: 'Rubens'
   };
 
-  var alan = {
+  let alan = {
     name: 'Alan',
     lastName: 'Silva'
   };
 
   /*
   Agora crie uma função chamada `getFullName` que retorne as propriedades
-  `name` e `lastName` dos objetos acima, formando um nome compvaro.
+  `name` e `lastName` dos objetos acima, formando um nome completo.
   A função não deve receber nenhum parâmetro, mas as propriedades `name` e
   `lastName` devem ser dinâmicas.
   A mesma função deve servir para as duas pessoas (ou qualquer outra que for
   criada).
-  Depois disso, invoque essa função, mostrando no console o nome compvaro das
+  Depois disso, invoque essa função, mostrando no console o nome completo das
   pessoas que foram criadas anteriormente, passando as pessoas acima como
   contexto da função. Use um console.log por pessoa.
   */
@@ -34,7 +34,7 @@
 
   /*
   Crie uma função chamada `sum`. Essa função pode receber uma lista de
-  parâmetros variável, e deverá retornar a soma de todos eles.
+  parâmetros letiável, e deverá retornar a soma de todos eles.
   Não use estruturas de repetição para somar os argumentos.
   Na primeira linha, dentro da função, deixe um console.log para mostrar todos
   os parâmetros passados para essa função.
@@ -48,7 +48,7 @@
 
   /*
   Mostre no console que a função acima funciona, invocando-a em 3 console.log
-  diferentes, com quantidades variáveis de parâmetros passados.
+  diferentes, com quantidades letiáveis de parâmetros passados.
   */
   console.log( '\nSomar alguns números:' );
   console.log( sum( 10, 20, 30, 40 ));
@@ -56,11 +56,11 @@
   console.log( sum( 2, 4, 6, 8, 10, 12, 14));
 
   /*
-  Declare uma variável chamada `userEntry`, que irá receber alguns valores
+  Declare uma letiável chamada `userEntry`, que irá receber alguns valores
   entrados pelo usuário. Mostre para o usuário a seguinte frase:
   "Entre com alguns números que serão somados:"
   */
-  var userEntry = prompt('Entre com alguns números que serão somados: ');
+  let userEntry = prompt('Entre com alguns números que serão somados: ');
 
   /*
   Mostre no console o valor entrado pelo usuário:
@@ -75,16 +75,16 @@
   */
   console.log( '\nFunção que limpa entrada do usuário (somente números):' );
   function justNumbers( whatEver ) {
-    return whatEver.replace( /\D/g, ',' ).split(',')
-  };
+    return whatEver.replace( /\D/g, ',' ).split(',');
+  }
   console.log(typeof(justNumbers));
 
   /*
   Usando a função acima, faça a limpeza dos valores entrados pelo usuário,
-  atribuindo o resultado à uma variável `numbers`.
+  atribuindo o resultado à uma letiável `numbers`.
   */
   console.log( '\nEntrada do usuário limpa. Somente números:' );
-  var numbers = justNumbers(userEntry);
+  let numbers = justNumbers(userEntry);
   console.log(numbers);
 
   /*
